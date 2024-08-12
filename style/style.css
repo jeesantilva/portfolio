@@ -1,0 +1,800 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+
+
+:root {
+    --bk-principal: #01010f;
+    --secondary_bg: #E80F88;
+    --bk-transparencia : #e80f8617; 
+    --bk-menu:  #030313;
+    --bk-skill:#030313;
+    --bg-skill-bar:  #4d4d4d73;
+    --primary_text: #ddd9ce;
+    --secondary_text: #E80F88;
+    --box_shadow_hover: #e80f8833 -10px 10px;
+    --box_shadow_theme: #e82cc333;
+
+    /* color theme */
+            --pink: #E80F88;
+            --orange:#fa5b0f ;
+            --green: #37b182;
+            --blue: #1854b4;
+            --purple: #79018C;
+  
+}
+
+body.light{
+    --bk-principal: #fff;
+    --bk-menu:#f4f4f4;
+    --bk-skill:#f4f4f4;
+    --primary_text:#01010f;
+}
+
+body{
+    /* width: 100vw; */
+    overflow-x: hidden;
+    background: var(--bk-principal);
+    color: var(--primary_text);
+    display: flex;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ===== Inicio Menu===== */
+
+.menu{
+    background: var(--bk-menu);
+    width: 16%;
+    height: 100%;
+   
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu_fixed{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu_hamburguer{
+    display: none;
+}
+
+
+.menu_fixed .logo{
+
+    width: 100%;
+    padding-left: 35px;
+    padding-top: 10px;
+}
+
+.menu_fixed .logo h1{
+   
+    font-size: 35px;
+    position: relative;
+    font-weight: 500;
+}
+
+.menu_fixed .logo h1 span{
+    font-size: 30px;
+    color: var(--secondary_text);
+    position: absolute;
+    left: 58px;
+    bottom: 0.7px;
+}
+
+/* =====Inicio dos links de navegação do menu ===== */
+
+.menu-navegacao nav{
+    
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.menu-navegacao nav .link-nav{
+    
+    padding: 5px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: var(--primary_text);
+    fill: var(--primary_text);
+}
+.menu-navegacao nav .link-nav:hover{
+    color: var(--secondary_text);
+    fill: var(--secondary_text);
+}
+
+
+.icon-link-nav{
+    width: 30px;
+}
+
+.menu-navegacao nav .link-nav p{
+    
+    width: 150px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+/* /* =====Fim dos links de navegação do menu ===== */ 
+
+/* ===== Incio dos icones de redes sociais do menu ===== */
+.menu .redes-contatos{
+    
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu .redes-contatos .icon-redes-nav{
+    width: 40px;
+    fill: var(--primary_text);
+}
+
+.menu .redes-contatos .icon-redes-nav:hover{
+    fill:var(--secondary_text);
+}
+
+/* ===== Fim dos icones de redes sociais do menu ===== */
+/* ===== Fim Menu ===== */
+
+/* ===== Inicio do Main ====== */
+
+.container-main{
+    position: relative;
+    left: 17%;
+    width: 80%;
+    
+}
+
+/* ===== Inicio do home */
+
+.container-section{
+    min-height: 100vh;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.home{
+    /* max-width: 1150px; */
+    margin: auto;
+    display: flex;
+    gap: 100px;
+}
+
+.home .home-informacao{
+   
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.home .home-informacao .info {
+   
+    padding: 10px;
+}
+
+.home .home-informacao .info .p-apresentacao{
+    font-size: 35px;
+    font-weight: 500;
+}
+.home .home-informacao .info span{
+    font-size: 45px;
+    color: var(--secondary_text);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.home .home-informacao .info h2{
+    font-size: 20px;
+    font-weight: 200;
+    padding-left: 20px;
+    letter-spacing: 5px;
+    line-height: 2px;
+}
+
+.home .home-informacao .info .p-info{
+    padding-top: 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+
+}
+.home .home-informacao .info .p-info span{
+    padding-top: 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+
+}
+
+
+.home .home-informacao .btn-home{
+    padding-left: 20px;
+    width: 400px;
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.home .home-informacao .btn-home a{
+   
+    width: 150px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: var(--primary_text);
+    fill: var(--primary_text);
+    background: var(--secondary_bg);
+    border-radius: 15px;
+}
+
+.home .home-informacao .btn-home a:hover{
+    font-weight: 600;
+}
+    
+
+
+
+.icon-home{
+    width: 20px;
+    fill: var(--primary_text);
+}
+
+
+
+.home-imagem .bubble{
+    width: 410px;
+    height: 390px;
+    background: var(--secondary_bg);
+    border-radius: 66% 34% 75% 25% / 42% 42% 58% 58%;
+    overflow: hidden;
+    position: relative;
+}
+
+.bubble .img-bubble{
+    width: 100%;
+    position: absolute;
+    bottom: -60px;
+}
+
+/* ===== Fim do Home ======= */
+
+/* ===== Inicio About ====== */
+.container-about{
+    flex-direction: column;
+    padding: 50px 20px 0px 50px;
+}
+
+.container-about .about h2{
+
+    width: 110px;
+    font-size: 30px;
+    border-bottom: solid 5px var(--secondary_bg);
+}
+
+.container-about .apresentacao_e_skill{
+    
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.texto-apresentacao{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 5px;
+    
+}
+
+.texto-apresentacao .p-about{
+    font-size: 20px;
+    font-weight: 500;
+}
+.texto-apresentacao .p-about span{
+    font-size: 22px;
+    color: var(--secondary_text);
+}
+.texto-apresentacao p{
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: justify;
+    font-weight: 300;
+}
+.texto-apresentacao p span{
+    font-weight: 500;
+    
+}
+
+.apresentacao-skill{
+    
+    width: 40%;
+    background: var(--bk-skill);
+    padding: 50px 0;
+    border-radius: 10px;
+}
+
+.apresentacao-skill .text-skill{
+    display: flex;
+    justify-content: end;
+    font-size: 24px;
+    color:var(--secondary_text);;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.apresentacao-skill .skills{
+    
+    margin-top: 50px;
+}
+
+.box-skill{
+    padding: 0 10px;
+
+}
+
+.nome-percentual{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 8px;
+    font-size: 18px;
+}
+
+.bar-skill{
+    
+    width: 100%;
+    height: 12px;
+    border-radius: 10px;
+    background: var(--bg-skill-bar);
+    position: relative;
+}
+/* ====== Inicio das skills bar ======*/
+.bar-skill .skill-color-html{
+    
+    width: 100%;
+    height: 12px;
+    border-radius: 10px;
+    background: var(--secondary_bg);
+    position: absolute;
+}
+.bar-skill .skill-color-css{
+    
+    width: 90%;
+    height: 12px;
+    border-radius: 10px;
+    background: var(--secondary_bg);
+    position: absolute;
+}
+.bar-skill .skill-color-js{
+    
+    width: 50%;
+    height: 12px;
+    border-radius: 10px;
+    background: var(--secondary_bg);
+    position: absolute;
+}
+.bar-skill .skill-color-react{
+    
+    width: 5%;
+    height: 12px;
+    border-radius: 10px;
+    background: var(--secondary_bg);
+    position: absolute;
+}
+.bar-skill .skill-color-angular{
+    
+    width: 1%;
+    height: 12px;
+    border-radius: 10px;
+    background: var(--secondary_bg);
+    position: absolute;
+}
+/* ====== Fim das skills bar ======*/
+
+/* ===== Fim About ====== */
+
+
+/* ===== Inicio dos Projetos ====== */
+
+.container-projects{
+    flex-direction: column;
+    padding: 50px 20px 0px 50px;
+}
+.container-projects h2{
+    width: 150px;
+    font-size: 30px;
+    border-bottom: solid 5px var(--secondary_bg);
+}
+
+.container-projects .box-projects{
+
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+.card{
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: solid 0.5px var(--secondary_bg);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    transition: all 0.6s ease;
+    display: flex;
+    flex: 2 1 300px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    background: var(--bk-skill);
+    transition: all 0.5s ease;
+
+}
+
+.card:hover{
+    border: solid 5px var(--secondary_bg);
+}
+
+.card .img{
+    height: 200px;
+}
+
+.card .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.card .content{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 10px;
+    gap: 10px;
+}
+
+.card .content p{
+    
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary_text);
+}
+
+.card .content .linguagens-usadas{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.card .content .linguagens-usadas .icon-lg{
+    width: 24px;
+    height: 24px;
+    fill: var(--primary_text);
+}
+
+
+.card .btns-projetos{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5px;
+    width: 210px;
+    margin: 0 auto;
+}
+
+
+.card .btns-projetos .btn-proj{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    padding: 5px;
+    width: 90px;
+    background: var(--secondary_bg);
+    border-radius: 15px;
+    color: var(--primary_text);
+    font-size: 16px;
+    fill: var(--primary_text);
+    transition: all 0.3s ease;
+}
+.card .btns-projetos .btn-proj:hover{
+    font-weight: 600;
+    
+}
+
+.card .btns-projetos .btn-proj .icon-proj{
+    width: 24px;
+}
+/* ===== Fim dos projetos ====== */
+
+/* ===== Inicio de Contatos ====== */
+
+
+.container-contacts{
+    flex-direction: column;
+    padding: 50px 20px 20px 50px;
+    width: 100%;
+}
+.container-contacts h2{
+    width: 150px;
+    font-size: 30px;
+    border-bottom: solid 5px var(--secondary_bg);
+}
+
+.container-form {
+    
+    background: var(--bk-transparencia);
+    margin-top: 50px;
+    padding: 50px 20px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-evenly;
+   
+}
+
+.container-form .info-contacts{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* justify-content: center; */
+}
+
+.info-contacts h3{
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.info-contacts .pg-contacts p{
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.info-contacts .pg-contacts p span{
+    color: var(--secondary_text);
+
+}
+.container-form .interface{
+    width: 500px;
+}
+
+.container-form .interface form{
+
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+}
+
+.container-form .interface form input{
+    width: 100%;
+    height: 50px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+
+    color: var(--primary_text);
+    background: none;
+    border: var(--secondary_bg) 2px solid;
+}
+
+.container-form .interface form input::placeholder{
+    color: var(--secondary_text);  
+}
+
+.container-form .interface form textarea{
+    width: 100%;
+    min-height: 150px;
+    resize: vertical;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--primary_text);
+    background: none;
+    border: var(--secondary_bg) 2px solid;
+   
+}
+
+.container-form .interface form textarea::placeholder{
+    color: var(--secondary_text);  
+}
+
+input,
+textarea{
+    transition: boder-color 0.3s, box-shadow 0.3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus{
+    outline: none;
+    border-color: var(--secondary_text) ;
+    box-shadow: 1px 1px 3px 1px var(--secondary_bg);
+}
+
+.container-form .interface button{
+    margin-top: 10px;
+    width: 100px;
+    padding: 13px;
+    background: var(--secondary_bg);
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    color: var(--primary_text);
+    cursor: pointer;
+}
+
+.container-form .interface button:hover{
+    font-weight: bold;
+}
+
+button:disabled{
+    cursor: not-allowed;
+    
+}
+
+
+
+/* ===== Fim de Contatos ====== */
+
+
+.modos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 2rem;
+    top: 60px;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 8px;
+}
+
+.icon-modo{
+    transform: scale(1.7);
+    cursor: pointer;
+    color: var(--secondary_text);
+}
+.icon-modo:hover{
+    color: var(--primary_text);
+}
+
+.modos .container-icon {
+    position: relative;
+}
+
+.container-icon .color-box{
+   
+    position:absolute;
+    top: 25px;
+    right: 0;
+    background: var(--bk-transparencia);
+    box-shadow: 0 5px 10px var(--box_shadow_theme);
+    padding: 10px 5px;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    transition:all 1s ease;
+}
+.container-icon.open .color-box{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.container-icon .color-box h3 {
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(--primary_text);
+}
+
+.color-box .colors-switchers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.color-box .colors-switchers .btn {
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.colors-switchers .btn.pink.active {
+    box-shadow: 0 0 0 2px #fff,
+        0 0 0 4px var(--pink);
+}
+
+.colors-switchers .btn.pink {
+    background: var(--pink);
+}
+
+.colors-switchers .btn.orange.active {
+    box-shadow: 0 0 0 2px #fff,
+        0 0 0 4px var(--orange);
+}
+
+.colors-switchers .btn.orange {
+    background: var(--orange);
+}
+
+.colors-switchers .btn.green.active {
+    box-shadow: 0 0 0 2px #fff,
+        0 0 0 4px var(--green);
+}
+
+.colors-switchers .btn.green {
+    background: var(--green);
+}
+
+.colors-switchers .btn.blue.active {
+    box-shadow: 0 0 0 2px #fff,
+        0 0 0 4px var(--blue);
+}
+
+.colors-switchers .btn.blue {
+    background: var(--blue);
+}
+
+.colors-switchers .btn.purple.active {
+    box-shadow: 0 0 0 2px #fff,
+        0 0 0 4px var(--purple);
+}
+
+.colors-switchers .btn.purple {
+    background: var(--purple);
+}
+
+
+
+
