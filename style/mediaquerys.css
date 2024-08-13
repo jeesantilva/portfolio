@@ -207,13 +207,11 @@
     .texto-apresentacao p{
         line-height: 25px;
     }
-    .apresentacao-skill{
+    
+    .container_skill{
         width: 80%;
     }
 
-    .apresentacao-skill .text-skill{
-        justify-content: start;
-    }
 
     .container-projects .box-projects{
         padding: 0;
@@ -260,8 +258,9 @@
         font-size: 16px;
     }
 
-    .apresentacao-skill{
+    .container_skill{
         width: 100%;
+        margin-bottom: 30px;   
     }
 
     .container-projects{
