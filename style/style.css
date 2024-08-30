@@ -149,12 +149,13 @@ body{
 }
 
 .menu .redes-contatos .icon-redes-nav{
-    width: 40px;
-    fill: var(--primary_text);
+    transform: scale(2.3);
+    color: var(--primary_text);
+    padding-bottom: 10px;
 }
 
 .menu .redes-contatos .icon-redes-nav:hover{
-    fill:var(--secondary_text);
+    color:var(--secondary_text);
 }
 
 /* ===== Fim dos icones de redes sociais do menu ===== */
