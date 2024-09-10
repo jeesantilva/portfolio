@@ -118,16 +118,14 @@ body{
     gap: 15px;
     align-items: center;
     color: var(--primary_text);
-    fill: var(--primary_text);
 }
 .menu-navegacao nav .link-nav:hover{
     color: var(--secondary_text);
-    fill: var(--secondary_text);
 }
 
 
 .icon-link-nav{
-    width: 30px;
+    transform: scale(2);
 }
 
 .menu-navegacao nav .link-nav p{
@@ -505,7 +503,7 @@ body{
 }
 
 .card .btns-projetos .btn-proj .icon-proj{
-    width: 24px;
+    transform: scale(1.5);
 }
 /* ===== Fim dos projetos ====== */
 
