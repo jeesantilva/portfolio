@@ -127,6 +127,7 @@
     .container-projects{
         width: 90%;
         margin: auto;
+        padding-bottom: 1rem;
     }
 
     .box-projects{
