@@ -7,6 +7,7 @@
     transform: translate(-50%);
     z-index: 1000;
     width: 80vw;
+    height: 6%;
     padding: 0.7rem 1rem;
     border-radius: 20px;
     display: flex;
@@ -31,8 +32,8 @@
 
 .icon-menu i {
     color: var(--secondary_text);
-    transform: scale(2.1);
-    padding:10px;
+    transform: scale(2.5);
+    padding: 0.625rem;
 }
 .container-redes-mode{
     display: flex;
@@ -49,7 +50,7 @@
 
 .icon-rede-menu{
     color: var(--primary_text);
-    transform: scale(1.8);
+    transform: scale(2);
 }
 
 .icon-rede-menu:hover{
@@ -205,9 +206,6 @@
     
     .icon-redes-nav:hover{
         color:var(--secondary_text);
-    }
-    .icon-rede-menu{
-        transform: scale(2);
     }
 
     .modos{
