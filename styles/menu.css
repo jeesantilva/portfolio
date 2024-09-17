@@ -130,6 +130,8 @@
 @media (min-width: 992px) and (max-width:1199px){
     .menu{
         width: 93vw;
+        heigth: 11%;
+        padding: 0.7rem 1rem;
     }
     .container-redes-mode{
         width: 60%;
