@@ -30,6 +30,11 @@ menu.addEventListener("click", ()=>{
     menuLinks.classList.toggle("open")
 })
 
+window.addEventListener("scroll", ()=>{
+    if(menuLinks.classList.contains("open")){
+        menuLinks.classList.remove("open")
+    }
+})
 
 
 
