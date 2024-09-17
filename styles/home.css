@@ -69,7 +69,8 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
-    color: var(--primary_text);
+    color: var(--cor-font-btn);
+    text-shadow: 1px 1px 2px #01010f;
     background: var(--secondary_bg);
     border-radius: 15px;
     font-weight: 400;
