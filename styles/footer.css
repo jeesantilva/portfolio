@@ -1,0 +1,43 @@
+
+.footer{
+    margin-top: 5rem;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background: var(--bk-menu);
+}
+
+.logo_footer{
+    width: 50%;
+    height: 30px;
+}
+
+.logo_footer h2{
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.logo_footer h2 span{
+    font-size: 1.6rem;
+    position:absolute;
+    bottom: -0.01rem;
+    left: 2.5rem;
+    color: var(--secondary_text);
+}
+
+.contact-footer p{
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    text-align: end;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+
+}
+
+@media (min-width: 1200px){
+    .footer{
+        display: none;
+    }
+}

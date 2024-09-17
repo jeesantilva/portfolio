@@ -1,0 +1,120 @@
+
+.modos{
+    display: flex;
+    width: 3.125rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625rem;
+    gap: 20px;
+    border-radius: 50px;
+    border: solid 0.2px var(--primary_text);
+}
+
+
+.icon-modo{
+    transform: scale(1.5);
+    cursor: pointer;
+    color: var(--secondary_text);
+}
+.icon-modo:hover{
+    color: var(--primary_text);
+}
+
+.modos .container-icon {
+    position: relative;
+}
+
+.container-icon .color-box{
+   
+    position:absolute;
+    top: 1.25rem;
+    right: -0.625rem;
+    background: var(--bk-transparencia);
+    box-shadow: 0 5px 10px var(--box_shadow_theme);
+    padding: 0.625rem 0.3125rem;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    transition:all 0.7ms ease-in;
+}
+.container-icon.open .color-box{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.container-icon .color-box h3 {
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(--primary_text);
+}
+
+.color-box .colors-switchers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.color-box .colors-switchers .btn {
+    width: 25px;
+    height: 25px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.colors-switchers .btn.pink.active {
+    box-shadow: 0 0 0 2px #fff,
+        0 0 0 4px var(--pink);
+}
+
+.colors-switchers .btn.pink {
+    background: var(--pink);
+}
+
+.colors-switchers .btn.orange.active {
+    box-shadow: 0 0 0 2px #fff,
+        0 0 0 4px var(--orange);
+}
+
+.colors-switchers .btn.orange {
+    background: var(--orange);
+}
+
+.colors-switchers .btn.green.active {
+    box-shadow: 0 0 0 2px #fff,
+        0 0 0 4px var(--green);
+}
+
+.colors-switchers .btn.green {
+    background: var(--green);
+}
+
+.colors-switchers .btn.blue.active {
+    box-shadow: 0 0 0 2px #fff,
+        0 0 0 4px var(--blue);
+}
+
+.colors-switchers .btn.blue {
+    background: var(--blue);
+}
+
+.colors-switchers .btn.purple.active {
+    box-shadow: 0 0 0 2px #fff,
+        0 0 0 4px var(--purple);
+}
+
+.colors-switchers .btn.purple {
+    background: var(--purple);
+}
+
+@media (min-width: 1200px){
+    .container-icon .color-box{
+        top: -11.875rem;
+    }
+}

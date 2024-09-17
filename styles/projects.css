@@ -1,0 +1,170 @@
+
+.container-projects{
+    padding-top: 2rem;
+}
+
+.container-projects h2{
+    width: 11.25rem;
+    padding-top: 4rem;
+    font-size: 1.875rem;
+    border-bottom: solid 5px var(--secondary_bg);
+}
+
+.box-projects{
+
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;  
+}
+.card{
+    height: 25rem;
+    border-radius: 10px;
+    overflow: hidden;
+    /* border: solid 0.5px var(--secondary_bg); */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--bk-skill);
+    transition: border 0.7ms ease-in-out ;
+}
+
+.card:hover{
+    border: solid 3px var(--secondary_bg);
+}
+
+.img{
+    height: 200px;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+}
+
+.container-text-card{
+    display: flex;
+    gap: 5px;
+    padding: 0.5rem 0.3rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.content p{
+    
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    text-align: center;
+    /* color: var(--primary_text); */
+}
+
+.content p span{
+    color: var(--secondary_text);
+}
+
+.btns-projetos{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem;
+    width: 15.6rem;
+    margin: 0 auto;
+}
+
+.btn-proj{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    padding: 0.5rem;
+    width: 5.6rem;
+    background: var(--secondary_bg);
+    border-radius: 15px;
+    color: var(--primary_text);
+    font-size: 1.2rem;
+    transition: font-weight 3ms ease-in-out;
+}
+
+.btn-proj:hover{
+    font-weight: 600;   
+}
+
+.icon-proj{
+    transform: scale(1.3);
+}
+
+.container-botao{
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.container-botao button{
+    padding: 0.5rem 1rem;
+    color: var(--primary_text);
+    background: var(--secondary_bg);
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: font-weight 0.5ms ease;
+}
+
+.container-botao button:hover{
+    font-weight: 600;
+}
+@media (min-width:768px){
+    .container-projects{
+        width: 90%;
+        margin: auto;
+    }
+
+    .box-projects{
+        width: 100%;
+        padding-top: 2.5rem;
+        margin: 0 auto;;
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .card{
+        flex-direction: row;
+        height: 20rem;
+        width: 100%;
+    }
+
+    .card:nth-child(2){
+        flex-direction: row-reverse;
+    }
+    .card:nth-child(4){
+        flex-direction: row-reverse;
+    }
+    .card:nth-child(6){
+        flex-direction: row-reverse;
+    }
+
+    .container-text-card{
+        width: 50%;
+        padding: 1rem 0.3rem;
+        justify-content: space-around;
+    }
+
+    .img{
+        width: 50%;
+        height: 100%;
+    }
+    .container-botao{
+        padding-bottom: 3rem;
+    }
+}
+

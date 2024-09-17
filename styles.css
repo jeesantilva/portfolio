@@ -1,0 +1,78 @@
+@import  url("styles/mode_alternate.css");
+@import  url("styles/menu.css");
+@import  url("styles/home.css");
+@import  url("styles/about.css");
+@import  url("styles/projects.css");
+@import  url("styles/footer.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --bk-principal: #01010f;
+    --secondary_bg: #E80F88;
+    --bk-transparencia : #e80f8617; 
+    --bk-menu:  #090913;
+    --bk-skill:#0c0c16eb;
+    --bg-skill-bar:  #4d4d4d73;
+    --primary_text: #ddd9ce;
+    --secondary_text: #E80F88;
+    --box_shadow_hover: #e80f8833 -10px 10px;
+    --box_shadow_theme: #e82cc333;
+
+    /* color theme */
+        --pink: #E80F88;
+        --orange:#fa5b0f ;
+        --green: #37b182;
+        --blue: #1854b4;
+        --purple: #79018C;
+  
+}
+
+body.light{
+    --bk-principal: #fff;
+    --bk-menu:#f4f4f4;
+    --bk-skill:#f4f4f4;
+    --primary_text:#01010f;
+} 
+
+*{
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: var(--bk-principal);
+    color: var(--primary_text);
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh ;
+    position: relative;
+}
+
+.container-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 500px;
+    margin: auto;
+    max-width: 100%;
+    padding: 0 25px;  
+}
+.container-main{
+    width: 100vw;  
+}
+
+@media (min-width: 1200px){
+    .container-main{
+        min-height: 100vh;
+    }
+    .container-main{
+        position: relative;
+        left: 17%;
+        width: 80%;
+    }
+}
+
+
+        
