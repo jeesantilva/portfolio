@@ -120,17 +120,23 @@
     margin-left: 50px;
 }
 
+@media (min-width: 468px) and (max-width:767px){
+    .menu{
+        width: 85vw;
+        height: 10%;
+    }
+}
 
 @media (min-width: 768px) and (max-width:991px){
     .menu{
         width: 90vw;
-        heigth: 10%;
+        height: 10%;
     }
 }
 @media (min-width: 992px) and (max-width:1199px){
     .menu{
         width: 93vw;
-        heigth: 11%;
+        height: 11%;
         padding: 0.7rem 1rem;
     }
     .container-redes-mode{
